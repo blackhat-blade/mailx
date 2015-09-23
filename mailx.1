@@ -263,7 +263,9 @@ available to help when composing letters.
 In normal usage \fImailx\fR is given no arguments
 and checks the user's mail out of the post office,
 then prints out a one line header
-of each message found.
+of each message found; if the users mailbox 
+is empty, or cannot be found, \fImailx\fR never
+enters interactive mode unless emptystart is set. 
 The current message is initially
 the first message (numbered 1)
 and can be printed using the print command
